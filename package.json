@@ -1,0 +1,22 @@
+{
+  "name": "ts-test",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.min.mjs",
+  "types": "dist/index.d.ts",
+  "author": "Potter Rafed <potter.rafed@cabiri.io>",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc && yarn bundle:esm",
+    "build:watch": "yarn tsc -w",
+    "bundle:esm": "rollup dist/script.js --file public/bundle.mjs --format esm",
+    "bundle:watch": "yarn bundle:esm -w"
+  },
+  "dependencies": {
+    "rollup": "^3.2.3",
+    "typescript": "^4.8.4"
+  }
+}
