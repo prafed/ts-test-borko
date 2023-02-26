@@ -1,8 +1,8 @@
 # Eeee B!
 
-1
-2
-3
+1 - ot predi
+2 - ot predi
+3 - ot predi
 4
 5
 6
